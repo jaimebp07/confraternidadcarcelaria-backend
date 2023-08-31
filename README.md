@@ -49,3 +49,42 @@ If you want to learn more about building native executables, please consult http
 
 ## Related Guides
 
+## Related Guides
+
+## Folder Structure
+
+This is an example of how the folder structure of a project might look:
+confraternity-raffle/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── org/
+│   │   │   │   ├── confraternidadcarcelaria/
+│   │   │   │   │   ├── confraternityraffle/
+│   │   │   │   │   │   ├── adapters/
+│   │   │   │   │   │   │   ├── input/
+│   │   │   │   │   │   │   │   ├── grpc/
+│   │   │   │   │   │   │   │   │   ├── RaffleServiceGrpc.java
+│   │   │   │   │   │   │   │   │   ├── RaffleServiceHandler.java
+│   │   │   │   │   │   │   ├── output/
+│   │   │   │   │   │   │       ├── grpc/
+│   │   │   │   │   │   │       │   ├── RaffleServiceBlockingStub.java
+│   │   │   │   │   │   │       │   ├── RaffleServiceGrpc.java
+│   │   │   │   │   │   │       ├── DatabaseRaffleRepository.java
+│   │   │   │   │   │   │       ├── ExternalServiceClient.java
+│   │   │   │   │   │   ├── application/
+│   │   │   │   │   │   │   ├── RaffleService.java
+│   │   │   │   │   │   ├── domain/
+│   │   │   │   │   │   │   ├── RaffleTicket.java
+│   │   │   │   │   │   ├── grpc/
+│   │   │   │   │   │   │   ├── RaffleGrpcService.java
+│   │   │   │   │   │   ├── ports/
+│   │   │   │   │   │       ├── input/
+│   │   │   │   │   │       │   ├── RegisterRaffleTicketInputPort.java
+│   │   │   │   │   │       ├── output/
+│   │   │   │   │   │       │   ├── RaffleRepository.java
+│   │   ├── resources/
+│   │   │   ├── application.properties
+│   ├── proto/
+│   │   ├── raffle.proto
+├── pom.xml

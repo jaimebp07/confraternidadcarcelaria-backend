@@ -1,7 +1,6 @@
 syntax = "proto3";
 
-package raffle;
-// package org.confraternidadcarcelaria.confraternityraffle.adapters.input.grpc;
+package org.confraternidadcarcelaria.confraternityraffle.adapters.input.grpc;
 
 service RaffleService {
   rpc RegisterTicket(RegisterTicketRequest) returns (RegisterTicketResponse);
